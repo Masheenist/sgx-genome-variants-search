@@ -16,7 +16,9 @@ in the License.
 */
 
 #include "config.h"
+#ifndef NON_SGX
 #include "Enclave_t.h"
+#endif
 #include <stdlib.h>
 #include <string.h>
 #include <sgx_utils.h>

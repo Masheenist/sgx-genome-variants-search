@@ -4,7 +4,9 @@
 #include <sgx_tae_service.h>
 #include <sgx_tkey_exchange.h>
 #include "config.h"
+#ifndef NON_SGX
 #include "Enclave_t.h"
+#endif
 #include "enclave_crypto.h"
 #include "math.h"
 #include "enclave_mh.h"

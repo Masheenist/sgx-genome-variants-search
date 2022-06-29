@@ -2,8 +2,9 @@
 #include <sgx_tae_service.h>
 #include <sgx_tkey_exchange.h>
 #include <openssl/evp.h>
+#ifndef NON_SGX
 #include "Enclave_t.h"
-
+#endif
 uint8_t sk[16] = {0};
 
 void enclave_derive_key(sgx_ra_context_t ctx)
